@@ -1,1 +1,320 @@
-<!DOCTYPE html><html lang="en"><head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <title>Its Me! Gusman!</title> <link rel="shortcut icon" href="favicon.ico"> <style>@import url('https://fonts.googleapis.com/css?family=Cutive+Mono'); body{font-family: 'Cutive Mono', monospace; font-weight: bold; background-color: #333333; color: #b3b3b3;}.center_div{width: 100%; position: absolute; left: 50%; top: 50%; transform :translate(-50%,-50%); text-align: center; font-size: 50px;}#container_social{position: absolute; border-top: 1px solid #b3b3b32f; color: #b3b3b32f; text-align: center; font-size: 30px; font-weight: 100; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; display: none; max-width: 100%;}#container_social:hover{border-top: 1px solid #b3b3b3;}#container_social2{display: none; font-size: 70px;}#btn_container{display: none;}.button{background: transparent; color: #b3b3b3; padding: 16px 32px; text-align: center; text-decoration: none; font-size: 16px; -webkit-transition-duration: 0.4s; transition-duration: 0.4s; cursor: pointer; border: 2px solid #b3b3b3; outline: none;}.button:hover{border: 2px solid #555555; background-color: #555555; color: white;}@media only screen and (max-width: 739px){.center_div{font-size: 40px !important;}.button{padding: 10px 20px !important; font-size: 14px !important;}}@media only screen and (max-width: 425px){#container_social2{font-size: 30px !important;}}@media only screen and (max-width: 909px){#container_social{bottom: 20px; width: 425px; padding: 10px 0px; left: 50%; transform :translate(-50%);}}@media only screen and (min-width: 740px){#container_social{left: 50%; bottom: 20px; transform :translate(-50%,-50%); padding: 10px 100px;}}.fab{cursor: pointer; -webkit-transition-duration: 0.4s; transition-duration: 0.4s;}#container_social > .fa-github:hover{color: #000000;}#container_social > .fa-facebook:hover{color: #4267B2;}#container_social > .fa-instagram:hover{background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%); background-clip: text; -webkit-background-clip: text;}#container_social > .fa-linkedin:hover{color: #0077B5;}#container_social > .fa-line:hover{color: #00B900;}#container_social > .fa-twitter:hover{color: #1DA1F2;}#container_social > .fa-github:hover{color: #b3b3b3;;}</style> <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous"> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117584059-3"></script> <script>window.dataLayer=window.dataLayer || []; function gtag(){dataLayer.push(arguments);}gtag('js', new Date()); gtag('config', 'UA-117584059-3'); </script></head><body> <div id="will_be_hide"> <div class="center_div" id="app"></div><div class="center_div" id="btn_container"> <button class="button" id="btn_repeat">Repeat</button> <button class="button" id="btn_my_web">Learn More About Me</button> </div><div id="container_social"> <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-line"></i> <i class="fab fa-twitter"></i> <i class="fab fa-github"></i> </div></div><div class="center_div" id="container_social2"> <i class="fab fa-facebook"></i> <i class="fab fa-instagram"></i> <i class="fab fa-linkedin"></i> <i class="fab fa-line"></i> <i class="fab fa-twitter"></i> <i class="fab fa-github"></i> </div><script src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script> <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> <script>var isAllComponentDisplayed=false; var playTimes=1; var enableClick=true; var app=document.getElementById('app'); var typewriter=new Typewriter(app,{loop: false}); function startTypeWriter(){typewriter.deleteAll().pauseFor(500) .typeString('.....') .pauseFor(1500) .deleteAll() .typeString('Hi!') .pauseFor(1500) .deleteAll() .typeString('Its ME!') .pauseFor(1000) .deleteAll() .typeString('Gusman!') .pauseFor(1500) .deleteAll() .typeString('Actually my name is..') .pauseFor(700) .deleteAll() .typeString('Tri Cahyo Gusmantoro') .pauseFor(1500) .deleteAll() .typeString('But..') .pauseFor(500) .deleteAll() .typeString('Some people also call me..') .pauseFor(700) .deleteAll() .typeString('"Gendut"') .pauseFor(2000) .deleteAll() .typeString('I am a programmer') .pauseFor(1500) .deleteAll() .typeString('I develop web..') .pauseFor(700) .deleteChars(2) .pauseFor(500) .typeString(' and android apps') .pauseFor(1500) .deleteAll() .typeString('Have any question?') .pauseFor(1000) .deleteAll() .typeString('Feel free to contact me :)') .start();}function reportTired(){typewriter.deleteAll().pauseFor(500) .typeString('Hmmm...') .pauseFor(1500) .deleteAll() .typeString('I am tired to do this') .pauseFor(1500) .deleteAll() .typeString('again and again...') .pauseFor(2000) .deleteAll() .typeString('Want to know me closer?') .pauseFor(1000) .deleteAll() .typeString('Just contact me on my social media') .pauseFor(1500) .deleteAll() .typeString(':)') .start();}startTypeWriter(); var component; function displayComponent(){isAllComponentDisplayed=false; component=setInterval(function (){var node=document.getElementById('app'); var textContent=node.textContent; if (textContent=="Feel free to contact me :)|"){if (!isAllComponentDisplayed){isAllComponentDisplayed=true; enableClick=true; $("#btn_container").fadeIn(1500); $("#container_social").fadeIn(1500); myStopFunction();}}else if (textContent==":)|"){if (!isAllComponentDisplayed){isAllComponentDisplayed=true; $("#will_be_hide").fadeOut(2000, function (){$("#container_social2").fadeIn(1500);});}}}, 1000);}function myStopFunction(){clearInterval(component);}displayComponent(); setInterval(function (){var typewriterHeight=$("#app").height(); $('#btn_container').css('margin-top', typewriterHeight+10);}, 1); $("#btn_repeat").click(function (){if(enableClick){enableClick=false; $("#btn_container").fadeOut(1000, function(){if(playTimes < 3){playTimes++; startTypeWriter();}else{reportTired();}displayComponent();});}}); $("#btn_my_web").click(function (){window.location="https://gusman.sandevelopment.com/";}); $(".fa-facebook").click(function (){window.open("https://web.facebook.com/gusmantoro31");}); $(".fa-instagram").click(function (){window.open("https://www.instagram.com/gusman_31/");}); $(".fa-linkedin").click(function (){window.open("https://www.linkedin.com/in/gusman31");}); $(".fa-line").click(function (){window.open("https://line.me/ti/p/XuGBKO1jfA");}); $(".fa-twitter").click(function (){window.open("https://twitter.com/gusmantoro31");}); $(".fa-github").click(function (){window.open("https://github.com/gusmantoro");}); </script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Its Me! Gusman!</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+        body{
+            font-family: 'Cutive Mono', monospace;
+            font-weight: bold;
+            background-color: #333333;
+            color: #b3b3b3;
+        }
+        .center_div{
+            width: 100%;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform :translate(-50%,-50%);
+            text-align: center;
+            font-size: 50px;
+        }
+        #container_social{
+            position: absolute;
+            border-top: 1px solid #b3b3b32f;
+            color: #b3b3b32f;
+            text-align: center;
+            font-size: 30px;
+            font-weight: 100;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            display: none;
+            max-width: 100%;
+        }
+        #container_social:hover{
+            border-top: 1px solid #b3b3b3;
+        }
+        #container_social2{
+            display: none;
+            font-size: 70px;
+        }
+        #btn_container{
+            display: none;
+        }
+        .button {
+            background: transparent;
+            color: #b3b3b3;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            border: 2px solid #b3b3b3;
+            outline: none;
+        }
+        .button:hover {
+            border: 2px solid #555555;
+            background-color: #555555;
+            color: white;
+        }
+        @media only screen and (max-width: 739px) {
+            .center_div{
+                font-size: 40px !important;
+            }
+            .button{
+                padding: 10px 20px !important;
+                font-size: 14px !important;
+            }
+        }
+        @media only screen and (max-width: 425px) {
+            #container_social2{
+                font-size: 30px !important;
+            }
+        }
+        @media only screen and (max-width: 909px) {
+            #container_social{
+                bottom: 20px;
+                width: 425px;
+                padding: 10px 0px;
+                left: 50%;
+                transform :translate(-50%);
+            }
+        }
+        @media only screen and (min-width: 740px) {
+            #container_social{
+                left: 50%;
+                bottom: 20px;
+                transform :translate(-50%,-50%);
+                padding: 10px 100px;
+            }
+        }
+        .fab{
+            cursor: pointer;
+            -webkit-transition-duration: 0.4s;
+            transition-duration: 0.4s;
+        }
+        #container_social > .fa-github:hover{
+            color: #000000;
+        }
+        #container_social > .fa-facebook:hover{
+            color: #4267B2;
+        }
+        #container_social > .fa-instagram:hover{
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            background-clip: text;
+            -webkit-background-clip: text;
+        }
+        #container_social > .fa-linkedin:hover{
+            color: #0077B5;
+        }
+        #container_social > .fa-line:hover{
+            color: #00B900;
+        }
+        #container_social > .fa-twitter:hover{
+            color: #1DA1F2;
+        }
+        #container_social > .fa-github:hover{
+            color: #b3b3b3;;
+        }
+    </style>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+     integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" 
+     crossorigin="anonymous">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117584059-3"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-117584059-3');
+    </script>
+</head>
+<body>
+    <div id="will_be_hide">
+        <div class="center_div" id="app"></div>
+        <div class="center_div" id="btn_container">
+            <button class="button" id="btn_repeat">Repeat</button>
+            <button class="button" id="btn_my_web">Learn More About Me</button>
+        </div>
+        <div id="container_social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-instagram"></i>
+            <i class="fab fa-linkedin"></i>
+            <i class="fab fa-line"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-github"></i>
+        </div>
+    </div>
+    <div class="center_div" id="container_social2">
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-line"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-github"></i>
+    </div>
+    <script async src="https://cdnjs.cloudflare.com/ajax/libs/TypewriterJS/1.0.0/typewriter.min.js"></script>
+    <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script  type="text/javascript">
+        window.onload = function () {
+            var isAllComponentDisplayed = false;
+            var playTimes = 1;
+            var enableClick = true;
+
+            var app = document.getElementById('app');
+            var typewriter = new Typewriter(app, {
+                loop: false
+            });
+
+            function startTypeWriter() {
+                typewriter.deleteAll().pauseFor(500)
+                    .typeString('.....')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Hi!')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Its ME!')
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString('Gusman!')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Actually my name is..')
+                    .pauseFor(700)
+                    .deleteAll()
+                    .typeString('Tri Cahyo Gusmantoro')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('But..')
+                    .pauseFor(500)
+                    .deleteAll()
+                    .typeString('Some people also call me..')
+                    .pauseFor(700)
+                    .deleteAll()
+                    .typeString('"Gendut"')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('I am a programmer')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('I develop web..')
+                    .pauseFor(700)
+                    .deleteChars(2)
+                    .pauseFor(500)
+                    .typeString(' and android apps')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('Have any question?')
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString('Feel free to contact me :)')
+                    .start();
+            }
+
+            function reportTired() {
+                typewriter.deleteAll().pauseFor(500)
+                    .typeString('Hmmm...')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('I am tired to do this')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString('again and again...')
+                    .pauseFor(2000)
+                    .deleteAll()
+                    .typeString('Want to know me closer?')
+                    .pauseFor(1000)
+                    .deleteAll()
+                    .typeString('Just contact me on my social media')
+                    .pauseFor(1500)
+                    .deleteAll()
+                    .typeString(':)')
+                    .start();
+            }
+            
+            startTypeWriter();
+
+            var component;
+
+            function displayComponent() {
+                isAllComponentDisplayed = false;
+                component = setInterval(function () {
+                    var node = document.getElementById('app');
+                    var textContent = node.textContent;
+                    if (textContent == "Feel free to contact me :)|") {
+                        if (!isAllComponentDisplayed) {
+                            isAllComponentDisplayed = true;
+                            enableClick = true;
+                            $("#btn_container").fadeIn(1500);
+                            $("#container_social").fadeIn(1500);
+                            myStopFunction();
+                        }
+                    }else if (textContent == ":)|") {
+                        if (!isAllComponentDisplayed) {
+                            isAllComponentDisplayed = true;
+                            $("#will_be_hide").fadeOut(2000, function () {
+                                $("#container_social2").fadeIn(1500);
+                            });
+                        }
+                    }
+                }, 1000);
+            }
+
+            function myStopFunction() {
+                clearInterval(component);
+            }
+
+            displayComponent();
+
+            setInterval(function () {
+                var typewriterHeight = $("#app").height();
+                $('#btn_container').css('margin-top', typewriterHeight+10);
+            }, 1);
+
+            $("#btn_repeat").click(function () {
+                if(enableClick){
+                    enableClick = false;
+                    $("#btn_container").fadeOut(1000, function(){
+                        if(playTimes < 3){
+                            playTimes++;
+                            startTypeWriter();
+                        }else{
+                            reportTired();
+                        }
+                        displayComponent();
+                    });
+                }
+            });
+
+            $("#btn_my_web").click(function () {
+                window.location = "https://gusman.sandevelopment.com/";
+            });
+            $(".fa-facebook").click(function () {
+                window.open("https://web.facebook.com/gusmantoro31");
+            });
+            $(".fa-instagram").click(function () {
+                window.open("https://www.instagram.com/gusman_31/");
+            });
+            $(".fa-linkedin").click(function () {
+                window.open("https://www.linkedin.com/in/gusman31");
+            });
+            $(".fa-line").click(function () {
+                window.open("https://line.me/ti/p/XuGBKO1jfA");
+            });
+            $(".fa-twitter").click(function () {
+                window.open("https://twitter.com/gusmantoro31");
+            });
+            $(".fa-github").click(function () {
+                window.open("https://github.com/gusmantoro");
+            });
+        };
+    </script>
+</body>
+</html>
